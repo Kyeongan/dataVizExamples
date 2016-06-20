@@ -26,8 +26,8 @@ function draw() {
     var _color = null;
 
     for (var i=0; i<data.length; i++) {
-        _x = data[i].x * 3;
-        _y = data[i].y * 3;
+        _x = data[i].x * 10;
+        _y = data[i].y * 10;
         _color = heapMapColor[data[i].nb] || "#FF0000";
 
         // _new = output.appendChild("<div></div>");
@@ -37,8 +37,8 @@ function draw() {
         _new.style.top = _x +'px';
         _new.style.position = 'absolute'
         _new.style.backgroundColor = _color;
-        _new.style.width = '3px';
-        _new.style.height = '3px';
+        _new.style.width = '10px';
+        _new.style.height = '10px';
     }
 }
 </script>
