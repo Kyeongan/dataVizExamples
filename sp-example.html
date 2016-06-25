@@ -2,9 +2,9 @@
 
 <head>
 	<meta charset='utf-8'>
-    <script src="http://www.scholarplot.com/lib/d3.v3.js" charset="utf-8"></script>
+	<script src="http://www.scholarplot.com/lib/d3.v3.js" charset="utf-8"></script>
 
-    <script src="http://www.scholarplot.com/js/nv.d3.js" chartset="utf-8"></script>
+	<script src="http://www.scholarplot.com/js/nv.d3.js" chartset="utf-8"></script>
 	<script src="http://www.scholarplot.com/js/tooltip.js"></script>
 
 	<script src="http://www.scholarplot.com/js/models/scatter.js"></script>
@@ -13,7 +13,7 @@
 	<script src="http://www.scholarplot.com/js/models/scatterChart.js"></script>
 
 
-    <link href="http://www.scholarplot.com/css/nv.d3.css" rel="stylesheet" type="text/css">
+	<link href="http://www.scholarplot.com/css/nv.d3.css" rel="stylesheet" type="text/css">
 
 	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
 
@@ -21,981 +21,981 @@
 
 <script>
 let g_data = [
-  {
-    "key": "Journal",
-    "values": [
-      {
-        "x": "2001",
-        "y": 2.301029995663981,
-        "size": 270,
-        "shape": "circle"
-      },
-      {
-        "x": "2002",
-        "y": 2.2988530764097064,
-        "size": 810,
-        "shape": "circle"
-      },
-      {
-        "x": "2007",
-        "y": 2.214843848047698,
-        "size": 90,
-        "shape": "circle"
-      },
-      {
-        "x": "2007",
-        "y": 2.1958996524092336,
-        "size": 270,
-        "shape": "circle"
-      },
-      {
-        "x": "2006",
-        "y": 2.107209969647868,
-        "size": 30,
-        "shape": "circle"
-      },
-      {
-        "x": "2002",
-        "y": 2.0899051114393976,
-        "size": 810,
-        "shape": "circle"
-      },
-      {
-        "x": "2003",
-        "y": 2.0681858617461617,
-        "size": 30,
-        "shape": "circle"
-      },
-      {
-        "x": "2008",
-        "y": 2.0569048513364723,
-        "size": 30,
-        "shape": "circle"
-      },
-      {
-        "x": "2007",
-        "y": 2.008600171761917,
-        "size": 90,
-        "shape": "circle"
-      },
-      {
-        "x": "2007",
-        "y": 1.9138138523837167,
-        "size": 30,
-        "shape": "circle"
-      },
-      {
-        "x": "2010",
-        "y": 1.845098040014257,
-        "size": 90,
-        "shape": "circle"
-      },
-      {
-        "x": "2001",
-        "y": 1.7993405494535815,
-        "size": 810,
-        "shape": "circle"
-      },
-      {
-        "x": "2006",
-        "y": 1.7481880270062005,
-        "size": 810,
-        "shape": "circle"
-      },
-      {
-        "x": "2009",
-        "y": 1.7403626894942439,
-        "size": 90,
-        "shape": "circle"
-      },
-      {
-        "x": "2000",
-        "y": 1.6720978579357173,
-        "size": 90,
-        "shape": "circle"
-      },
-      {
-        "x": "1999",
-        "y": 1.6532125137753435,
-        "size": 810,
-        "shape": "circle"
-      },
-      {
-        "x": "2003",
-        "y": 1.591064607026499,
-        "size": 30,
-        "shape": "circle"
-      },
-      {
-        "x": "2007",
-        "y": 1.5314789170422551,
-        "size": 30,
-        "shape": "circle"
-      },
-      {
-        "x": "2006",
-        "y": 1.5185139398778873,
-        "size": 90,
-        "shape": "circle"
-      },
-      {
-        "x": "2000",
-        "y": 1.4313637641589871,
-        "size": 30,
-        "shape": "circle"
-      },
-      {
-        "x": "2012",
-        "y": 1.3979400086720375,
-        "size": 90,
-        "shape": "circle"
-      },
-      {
-        "x": "2009",
-        "y": 1.3979400086720375,
-        "size": 270,
-        "shape": "circle"
-      },
-      {
-        "x": "2012",
-        "y": 1.3617278360175928,
-        "size": 270,
-        "shape": "circle"
-      },
-      {
-        "x": "1998",
-        "y": 1.2552725051033058,
-        "size": 90,
-        "shape": "circle"
-      },
-      {
-        "x": "2011",
-        "y": 1.0791812460476247,
-        "size": 30,
-        "shape": "circle"
-      },
-      {
-        "x": "1998",
-        "y": 1.041392685158225,
-        "size": 90,
-        "shape": "circle"
-      },
-      {
-        "x": "2014",
-        "y": 1,
-        "size": 30,
-        "shape": "circle"
-      },
-      {
-        "x": "2014",
-        "y": 1,
-        "size": 810,
-        "shape": "circle"
-      },
-      {
-        "x": "1996",
-        "y": 0.9030899869919434,
-        "size": 90,
-        "shape": "circle"
-      },
-      {
-        "x": "2013",
-        "y": 0.8450980400142567,
-        "size": 90,
-        "shape": "circle"
-      },
-      {
-        "x": "2010",
-        "y": 0.6989700043360187,
-        "size": 270,
-        "shape": "circle"
-      },
-      {
-        "x": "2000",
-        "y": 0.6989700043360187,
-        "size": 30,
-        "shape": "circle"
-      },
-      {
-        "x": "2013",
-        "y": 0,
-        "size": 270,
-        "shape": "circle"
-      },
-      {
-        "x": "2016",
-        "y": 0,
-        "size": 270,
-        "shape": "circle"
-      },
-      {
-        "x": "2016",
-        "y": 0,
-        "size": 30,
-        "shape": "circle"
-      },
-      {
-        "x": 0,
-        "y": 0,
-        "size": 30,
-        "shape": "circle"
-      },
-      {
-        "x": 0,
-        "y": 0,
-        "size": 90,
-        "shape": "circle"
-      },
-      {
-        "x": 0,
-        "y": 0,
-        "size": 270,
-        "shape": "circle"
-      },
-      {
-        "x": 0,
-        "y": 0,
-        "size": 810,
-        "shape": "circle"
-      }
-    ]
-  },
-  {
-    "key": "Conference / Book",
-    "values": [
-      {
-        "x": "2000",
-        "y": 2.045322978786657,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2005",
-        "y": 2.0170333392987803,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2004",
-        "y": 2.0170333392987803,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2000",
-        "y": 1.851258348719075,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2004",
-        "y": 1.8129133566428552,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2004",
-        "y": 1.7923916894982537,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2004",
-        "y": 1.6334684555795864,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2006",
-        "y": 1.6232492903979003,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2004",
-        "y": 1.6127838567197355,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2005",
-        "y": 1.6020599913279623,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2005",
-        "y": 1.6020599913279623,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2006",
-        "y": 1.591064607026499,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2009",
-        "y": 1.5185139398778873,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2001",
-        "y": 1.4913616938342726,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2005",
-        "y": 1.462397997898956,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2007",
-        "y": 1.447158031342219,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2005",
-        "y": 1.414973347970818,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2010",
-        "y": 1.3979400086720375,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2007",
-        "y": 1.3979400086720375,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2006",
-        "y": 1.3979400086720375,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2001",
-        "y": 1.380211241711606,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2007",
-        "y": 1.322219294733919,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2009",
-        "y": 1.2041199826559246,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2008",
-        "y": 1.2041199826559246,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2008",
-        "y": 1.2041199826559246,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2006",
-        "y": 1.1760912590556811,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2005",
-        "y": 1.1760912590556811,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2003",
-        "y": 1.1760912590556811,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2002",
-        "y": 1.1760912590556811,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2005",
-        "y": 1.1139433523068367,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2006",
-        "y": 1.0791812460476247,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2003",
-        "y": 1.0791812460476247,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2010",
-        "y": 1.041392685158225,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2009",
-        "y": 1.041392685158225,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2009",
-        "y": 1.041392685158225,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "1997",
-        "y": 1.041392685158225,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2009",
-        "y": 1,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2007",
-        "y": 1,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2005",
-        "y": 1,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "1999",
-        "y": 1,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "1996",
-        "y": 1,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "1994",
-        "y": 1,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2008",
-        "y": 0.9542425094393249,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2004",
-        "y": 0.9542425094393249,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "1997",
-        "y": 0.9542425094393249,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2010",
-        "y": 0.9030899869919434,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2002",
-        "y": 0.9030899869919434,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "1999",
-        "y": 0.9030899869919434,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2006",
-        "y": 0.8450980400142567,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "1996",
-        "y": 0.8450980400142567,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2010",
-        "y": 0.7781512503836435,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2012",
-        "y": 0.6989700043360187,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2009",
-        "y": 0.6989700043360187,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2006",
-        "y": 0.6989700043360187,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2013",
-        "y": 0.6020599913279623,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2009",
-        "y": 0.6020599913279623,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2008",
-        "y": 0.6020599913279623,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2013",
-        "y": 0.47712125471966244,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2011",
-        "y": 0.47712125471966244,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2010",
-        "y": 0.47712125471966244,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2009",
-        "y": 0.47712125471966244,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2008",
-        "y": 0.47712125471966244,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2005",
-        "y": 0.47712125471966244,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2014",
-        "y": 0.30102999566398114,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2012",
-        "y": 0.30102999566398114,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2012",
-        "y": 0.30102999566398114,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2009",
-        "y": 0.30102999566398114,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2009",
-        "y": 0.30102999566398114,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2008",
-        "y": 0.30102999566398114,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "1999",
-        "y": 0.30102999566398114,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "1997",
-        "y": 0.30102999566398114,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2015",
-        "y": 0,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2015",
-        "y": 0,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2014",
-        "y": 0,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2012",
-        "y": 0,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2011",
-        "y": 0,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2005",
-        "y": 0,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2003",
-        "y": 0,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2002",
-        "y": 0,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "1999",
-        "y": 0,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "1996",
-        "y": 0,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2016",
-        "y": 0,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2016",
-        "y": 0,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2016",
-        "y": 0,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2015",
-        "y": 0,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2015",
-        "y": 0,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2015",
-        "y": 0,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2014",
-        "y": 0,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2011",
-        "y": 0,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2010",
-        "y": 0,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2010",
-        "y": 0,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2004",
-        "y": 0,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2003",
-        "y": 0,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2003",
-        "y": 0,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2002",
-        "y": 0,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "2000",
-        "y": 0,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "1999",
-        "y": 0,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": "1997",
-        "y": 0,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": 0,
-        "y": 0,
-        "size": 30,
-        "shape": "triangle-up"
-      },
-      {
-        "x": 0,
-        "y": 0,
-        "size": 90,
-        "shape": "triangle-up"
-      },
-      {
-        "x": 0,
-        "y": 0,
-        "size": 270,
-        "shape": "triangle-up"
-      },
-      {
-        "x": 0,
-        "y": 0,
-        "size": 810,
-        "shape": "triangle-up"
-      }
-    ]
-  },
-  {
-    "key": "Patent",
-    "values": [
-      {
-        "x": "2006",
-        "y": 1.9912260756924949,
-        "size": 50,
-        "shape": "cross"
-      },
-      {
-        "x": "2002",
-        "y": 1.7781512503836434,
-        "size": 50,
-        "shape": "cross"
-      },
-      {
-        "x": "2001",
-        "y": 1.7708520116421442,
-        "size": 50,
-        "shape": "cross"
-      },
-      {
-        "x": "2001",
-        "y": 1.6812412373755872,
-        "size": 50,
-        "shape": "cross"
-      },
-      {
-        "x": "2001",
-        "y": 1.6532125137753435,
-        "size": 50,
-        "shape": "cross"
-      },
-      {
-        "x": "2004",
-        "y": 1.5682017240669948,
-        "size": 50,
-        "shape": "cross"
-      },
-      {
-        "x": "2004",
-        "y": 1.556302500767287,
-        "size": 50,
-        "shape": "cross"
-      },
-      {
-        "x": "2006",
-        "y": 1.5185139398778873,
-        "size": 50,
-        "shape": "cross"
-      },
-      {
-        "x": "2006",
-        "y": 1.3979400086720375,
-        "size": 50,
-        "shape": "cross"
-      },
-      {
-        "x": "2006",
-        "y": 1.2552725051033058,
-        "size": 50,
-        "shape": "cross"
-      },
-      {
-        "x": "2005",
-        "y": 1.2041199826559246,
-        "size": 50,
-        "shape": "cross"
-      },
-      {
-        "x": "2006",
-        "y": 1.0791812460476247,
-        "size": 50,
-        "shape": "cross"
-      },
-      {
-        "x": "2006",
-        "y": 1,
-        "size": 50,
-        "shape": "cross"
-      },
-      {
-        "x": "2008",
-        "y": 0.8450980400142567,
-        "size": 50,
-        "shape": "cross"
-      },
-      {
-        "x": "2013",
-        "y": 0,
-        "size": 50,
-        "shape": "cross"
-      },
-      {
-        "x": 0,
-        "y": 0,
-        "size": 30,
-        "shape": "cross"
-      },
-      {
-        "x": 0,
-        "y": 0,
-        "size": 90,
-        "shape": "cross"
-      },
-      {
-        "x": 0,
-        "y": 0,
-        "size": 270,
-        "shape": "cross"
-      },
-      {
-        "x": 0,
-        "y": 0,
-        "size": 810,
-        "shape": "cross"
-      }
-    ]
-  }
+	{
+		"key": "Journal",
+		"values": [
+			{
+				"x": "2001",
+				"y": 2.301029995663981,
+				"size": 270,
+				"shape": "circle"
+			},
+			{
+				"x": "2002",
+				"y": 2.2988530764097064,
+				"size": 810,
+				"shape": "circle"
+			},
+			{
+				"x": "2007",
+				"y": 2.214843848047698,
+				"size": 90,
+				"shape": "circle"
+			},
+			{
+				"x": "2007",
+				"y": 2.1958996524092336,
+				"size": 270,
+				"shape": "circle"
+			},
+			{
+				"x": "2006",
+				"y": 2.107209969647868,
+				"size": 30,
+				"shape": "circle"
+			},
+			{
+				"x": "2002",
+				"y": 2.0899051114393976,
+				"size": 810,
+				"shape": "circle"
+			},
+			{
+				"x": "2003",
+				"y": 2.0681858617461617,
+				"size": 30,
+				"shape": "circle"
+			},
+			{
+				"x": "2008",
+				"y": 2.0569048513364723,
+				"size": 30,
+				"shape": "circle"
+			},
+			{
+				"x": "2007",
+				"y": 2.008600171761917,
+				"size": 90,
+				"shape": "circle"
+			},
+			{
+				"x": "2007",
+				"y": 1.9138138523837167,
+				"size": 30,
+				"shape": "circle"
+			},
+			{
+				"x": "2010",
+				"y": 1.845098040014257,
+				"size": 90,
+				"shape": "circle"
+			},
+			{
+				"x": "2001",
+				"y": 1.7993405494535815,
+				"size": 810,
+				"shape": "circle"
+			},
+			{
+				"x": "2006",
+				"y": 1.7481880270062005,
+				"size": 810,
+				"shape": "circle"
+			},
+			{
+				"x": "2009",
+				"y": 1.7403626894942439,
+				"size": 90,
+				"shape": "circle"
+			},
+			{
+				"x": "2000",
+				"y": 1.6720978579357173,
+				"size": 90,
+				"shape": "circle"
+			},
+			{
+				"x": "1999",
+				"y": 1.6532125137753435,
+				"size": 810,
+				"shape": "circle"
+			},
+			{
+				"x": "2003",
+				"y": 1.591064607026499,
+				"size": 30,
+				"shape": "circle"
+			},
+			{
+				"x": "2007",
+				"y": 1.5314789170422551,
+				"size": 30,
+				"shape": "circle"
+			},
+			{
+				"x": "2006",
+				"y": 1.5185139398778873,
+				"size": 90,
+				"shape": "circle"
+			},
+			{
+				"x": "2000",
+				"y": 1.4313637641589871,
+				"size": 30,
+				"shape": "circle"
+			},
+			{
+				"x": "2012",
+				"y": 1.3979400086720375,
+				"size": 90,
+				"shape": "circle"
+			},
+			{
+				"x": "2009",
+				"y": 1.3979400086720375,
+				"size": 270,
+				"shape": "circle"
+			},
+			{
+				"x": "2012",
+				"y": 1.3617278360175928,
+				"size": 270,
+				"shape": "circle"
+			},
+			{
+				"x": "1998",
+				"y": 1.2552725051033058,
+				"size": 90,
+				"shape": "circle"
+			},
+			{
+				"x": "2011",
+				"y": 1.0791812460476247,
+				"size": 30,
+				"shape": "circle"
+			},
+			{
+				"x": "1998",
+				"y": 1.041392685158225,
+				"size": 90,
+				"shape": "circle"
+			},
+			{
+				"x": "2014",
+				"y": 1,
+				"size": 30,
+				"shape": "circle"
+			},
+			{
+				"x": "2014",
+				"y": 1,
+				"size": 810,
+				"shape": "circle"
+			},
+			{
+				"x": "1996",
+				"y": 0.9030899869919434,
+				"size": 90,
+				"shape": "circle"
+			},
+			{
+				"x": "2013",
+				"y": 0.8450980400142567,
+				"size": 90,
+				"shape": "circle"
+			},
+			{
+				"x": "2010",
+				"y": 0.6989700043360187,
+				"size": 270,
+				"shape": "circle"
+			},
+			{
+				"x": "2000",
+				"y": 0.6989700043360187,
+				"size": 30,
+				"shape": "circle"
+			},
+			{
+				"x": "2013",
+				"y": 0,
+				"size": 270,
+				"shape": "circle"
+			},
+			{
+				"x": "2016",
+				"y": 0,
+				"size": 270,
+				"shape": "circle"
+			},
+			{
+				"x": "2016",
+				"y": 0,
+				"size": 30,
+				"shape": "circle"
+			},
+			{
+				"x": 0,
+				"y": 0,
+				"size": 30,
+				"shape": "circle"
+			},
+			{
+				"x": 0,
+				"y": 0,
+				"size": 90,
+				"shape": "circle"
+			},
+			{
+				"x": 0,
+				"y": 0,
+				"size": 270,
+				"shape": "circle"
+			},
+			{
+				"x": 0,
+				"y": 0,
+				"size": 810,
+				"shape": "circle"
+			}
+		]
+	},
+	{
+		"key": "Conference / Book",
+		"values": [
+			{
+				"x": "2000",
+				"y": 2.045322978786657,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2005",
+				"y": 2.0170333392987803,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2004",
+				"y": 2.0170333392987803,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2000",
+				"y": 1.851258348719075,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2004",
+				"y": 1.8129133566428552,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2004",
+				"y": 1.7923916894982537,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2004",
+				"y": 1.6334684555795864,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2006",
+				"y": 1.6232492903979003,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2004",
+				"y": 1.6127838567197355,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2005",
+				"y": 1.6020599913279623,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2005",
+				"y": 1.6020599913279623,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2006",
+				"y": 1.591064607026499,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2009",
+				"y": 1.5185139398778873,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2001",
+				"y": 1.4913616938342726,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2005",
+				"y": 1.462397997898956,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2007",
+				"y": 1.447158031342219,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2005",
+				"y": 1.414973347970818,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2010",
+				"y": 1.3979400086720375,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2007",
+				"y": 1.3979400086720375,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2006",
+				"y": 1.3979400086720375,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2001",
+				"y": 1.380211241711606,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2007",
+				"y": 1.322219294733919,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2009",
+				"y": 1.2041199826559246,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2008",
+				"y": 1.2041199826559246,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2008",
+				"y": 1.2041199826559246,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2006",
+				"y": 1.1760912590556811,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2005",
+				"y": 1.1760912590556811,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2003",
+				"y": 1.1760912590556811,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2002",
+				"y": 1.1760912590556811,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2005",
+				"y": 1.1139433523068367,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2006",
+				"y": 1.0791812460476247,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2003",
+				"y": 1.0791812460476247,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2010",
+				"y": 1.041392685158225,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2009",
+				"y": 1.041392685158225,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2009",
+				"y": 1.041392685158225,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "1997",
+				"y": 1.041392685158225,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2009",
+				"y": 1,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2007",
+				"y": 1,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2005",
+				"y": 1,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "1999",
+				"y": 1,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "1996",
+				"y": 1,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "1994",
+				"y": 1,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2008",
+				"y": 0.9542425094393249,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2004",
+				"y": 0.9542425094393249,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "1997",
+				"y": 0.9542425094393249,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2010",
+				"y": 0.9030899869919434,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2002",
+				"y": 0.9030899869919434,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "1999",
+				"y": 0.9030899869919434,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2006",
+				"y": 0.8450980400142567,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "1996",
+				"y": 0.8450980400142567,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2010",
+				"y": 0.7781512503836435,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2012",
+				"y": 0.6989700043360187,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2009",
+				"y": 0.6989700043360187,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2006",
+				"y": 0.6989700043360187,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2013",
+				"y": 0.6020599913279623,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2009",
+				"y": 0.6020599913279623,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2008",
+				"y": 0.6020599913279623,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2013",
+				"y": 0.47712125471966244,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2011",
+				"y": 0.47712125471966244,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2010",
+				"y": 0.47712125471966244,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2009",
+				"y": 0.47712125471966244,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2008",
+				"y": 0.47712125471966244,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2005",
+				"y": 0.47712125471966244,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2014",
+				"y": 0.30102999566398114,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2012",
+				"y": 0.30102999566398114,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2012",
+				"y": 0.30102999566398114,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2009",
+				"y": 0.30102999566398114,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2009",
+				"y": 0.30102999566398114,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2008",
+				"y": 0.30102999566398114,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "1999",
+				"y": 0.30102999566398114,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "1997",
+				"y": 0.30102999566398114,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2015",
+				"y": 0,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2015",
+				"y": 0,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2014",
+				"y": 0,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2012",
+				"y": 0,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2011",
+				"y": 0,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2005",
+				"y": 0,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2003",
+				"y": 0,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2002",
+				"y": 0,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "1999",
+				"y": 0,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "1996",
+				"y": 0,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2016",
+				"y": 0,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2016",
+				"y": 0,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2016",
+				"y": 0,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2015",
+				"y": 0,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2015",
+				"y": 0,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2015",
+				"y": 0,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2014",
+				"y": 0,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2011",
+				"y": 0,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2010",
+				"y": 0,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2010",
+				"y": 0,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2004",
+				"y": 0,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2003",
+				"y": 0,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2003",
+				"y": 0,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2002",
+				"y": 0,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "2000",
+				"y": 0,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "1999",
+				"y": 0,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": "1997",
+				"y": 0,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": 0,
+				"y": 0,
+				"size": 30,
+				"shape": "triangle-up"
+			},
+			{
+				"x": 0,
+				"y": 0,
+				"size": 90,
+				"shape": "triangle-up"
+			},
+			{
+				"x": 0,
+				"y": 0,
+				"size": 270,
+				"shape": "triangle-up"
+			},
+			{
+				"x": 0,
+				"y": 0,
+				"size": 810,
+				"shape": "triangle-up"
+			}
+		]
+	},
+	{
+		"key": "Patent",
+		"values": [
+			{
+				"x": "2006",
+				"y": 1.9912260756924949,
+				"size": 50,
+				"shape": "cross"
+			},
+			{
+				"x": "2002",
+				"y": 1.7781512503836434,
+				"size": 50,
+				"shape": "cross"
+			},
+			{
+				"x": "2001",
+				"y": 1.7708520116421442,
+				"size": 50,
+				"shape": "cross"
+			},
+			{
+				"x": "2001",
+				"y": 1.6812412373755872,
+				"size": 50,
+				"shape": "cross"
+			},
+			{
+				"x": "2001",
+				"y": 1.6532125137753435,
+				"size": 50,
+				"shape": "cross"
+			},
+			{
+				"x": "2004",
+				"y": 1.5682017240669948,
+				"size": 50,
+				"shape": "cross"
+			},
+			{
+				"x": "2004",
+				"y": 1.556302500767287,
+				"size": 50,
+				"shape": "cross"
+			},
+			{
+				"x": "2006",
+				"y": 1.5185139398778873,
+				"size": 50,
+				"shape": "cross"
+			},
+			{
+				"x": "2006",
+				"y": 1.3979400086720375,
+				"size": 50,
+				"shape": "cross"
+			},
+			{
+				"x": "2006",
+				"y": 1.2552725051033058,
+				"size": 50,
+				"shape": "cross"
+			},
+			{
+				"x": "2005",
+				"y": 1.2041199826559246,
+				"size": 50,
+				"shape": "cross"
+			},
+			{
+				"x": "2006",
+				"y": 1.0791812460476247,
+				"size": 50,
+				"shape": "cross"
+			},
+			{
+				"x": "2006",
+				"y": 1,
+				"size": 50,
+				"shape": "cross"
+			},
+			{
+				"x": "2008",
+				"y": 0.8450980400142567,
+				"size": 50,
+				"shape": "cross"
+			},
+			{
+				"x": "2013",
+				"y": 0,
+				"size": 50,
+				"shape": "cross"
+			},
+			{
+				"x": 0,
+				"y": 0,
+				"size": 30,
+				"shape": "cross"
+			},
+			{
+				"x": 0,
+				"y": 0,
+				"size": 90,
+				"shape": "cross"
+			},
+			{
+				"x": 0,
+				"y": 0,
+				"size": 270,
+				"shape": "cross"
+			},
+			{
+				"x": 0,
+				"y": 0,
+				"size": 810,
+				"shape": "cross"
+			}
+		]
+	}
 ]
 
 var nsf_log_data, author, isLogScale, max_citation = 3000, minYear, curYear;
@@ -1006,126 +1006,126 @@ var nsf_log_data, author, isLogScale, max_citation = 3000, minYear, curYear;
 
 
 <style>
-	#plot_journal { margin:0; }
-	#plot_journal svg { height: 0px;}
-	#plot_journal svg {
-	  height: 400px;
-	}
+#plot_journal { margin:0; }
+#plot_journal svg { height: 0px;}
+#plot_journal svg {
+	height: 400px;
+}
 </style>
 
 <body>
 	<div>
-	<div id="plot_journal" class='with-3d-shadow with-transitions'>
-		<svg></svg>
+		<div id="plot_journal" class='with-3d-shadow with-transitions'>
+			<svg></svg>
+		</div>
 	</div>
-	</div>
 
-<script>
-nv.addGraph(function() {
-    var chart = nv.models.scatterChart()
-    .margin({left: 100})
-    .margin({right: 50})
-    .showDistX(true)
-    .showDistY(true)
-	.tooltipYContent(null)
-	.tooltipXContent(null)
-    .color(["rgb(255,95,0)", "rgb(0,200,0)", "rgb(0,0,255)", "rgb(119,136,153)"])
-    .xDomain([1990, 2016])
-    ;
+	<script>
+	nv.addGraph(function() {
+		var chart = nv.models.scatterChart()
+		.margin({left: 100})
+		.margin({right: 50})
+		.showDistX(true)
+		.showDistY(true)
+		.tooltipYContent(null)
+		.tooltipXContent(null)
+		.color(["rgb(255,95,0)", "rgb(0,200,0)", "rgb(0,0,255)", "rgb(119,136,153)"])
+		.xDomain([1990, 2016])
+		;
 
-    chart.tooltipContent(function(key, x, y, e)
-    {
-        if ( key == 'Journal' )
-        {
-            return '<div align="center"><p class="capitalize">'
-            + '<b><a href="'+ g_data.journal_pubURLArray[e.pointIndex] + '" target="_blank">'+ ((g_data.journal_titleArray[e.pointIndex].length < 80) ? g_data.journal_titleArray[e.pointIndex]:(g_data.journal_titleArray[e.pointIndex].substr(0,79)+" ..."))  + '</a></b>'
-            + ' (' + g_data.journal_yearArray[e.pointIndex] + ')'
-            + ' [Citations: ' + g_data.journal_citeArray[e.pointIndex] + ']'
-            + '<span class="closebtn" onclick="closeTooltip()">&times;</span>'
-            + '<br><i>' + g_data.journal_nameArray[e.pointIndex] + '</i>'
-            + ' [IF: ' + g_data.journal_impactFactorArray[e.pointIndex] + ']'
-            + '<hr id="hr_Dotted"/>'
-            + getSortedCoAuthorString(g_data.journal_pubAuthorArray[e.pointIndex].toString().split(','))
-            + '</div>'
-            + '</p>';
-        }
-        else if (key ==  'Conference / Book')
-        {
-            return '<div align="center"><p class="capitalize">'
-            + '<b><a href="'+ g_data.conf_pubURLArray[e.pointIndex] + '" target="_blank">'+ ((g_data.conf_titleArray[e.pointIndex].length < 80) ? g_data.conf_titleArray[e.pointIndex]:(g_data.conf_titleArray[e.pointIndex].substr(0,79)+" ..."))  + '</a></b>'
-            + ' (' + g_data.conf_yearArray[e.pointIndex] + ')'
-            + ' [Citations: ' + g_data.conf_citeArray[e.pointIndex] + ']'
-            + '<span class="closebtn" onclick="closeTooltip()">&times;</span>'
-            + '<br><i>' + g_data.conf_nameArray[e.pointIndex] + '</i>'
-            + '<hr id="hr_Dotted"/>'
-            + getSortedCoAuthorString(g_data.conf_pubAuthorArray[e.pointIndex].toString().split(','))
-            + '</div>'
-            + '</p>'
-            + '</div>'  ;
-        }
-        else if (key == 'Patent')
-        {
-            return '<div align="center"><p class="capitalize">'
-            + '<b><a href="'+ g_data.patent_pubURLArray[e.pointIndex] + '" target="_blank">'+ ((g_data.patent_titleArray[e.pointIndex].length < 80) ? g_data.patent_titleArray[e.pointIndex]:(g_data.patent_titleArray[e.pointIndex].substr(0,79)+" ..."))  + '</a></b>'
-            + ' (' + g_data.patent_yearArray[e.pointIndex] + ')'
-            + ' [Citations: ' + g_data.patent_citeArray[e.pointIndex] + ']'
-            + '<span class="closebtn" onclick="closeTooltip()">&times;</span>'
-            + '<br><i>' + g_data.patent_nameArray[e.pointIndex] + '</i>'
-            + '<hr id="hr_Dotted"/>'
-            + getSortedCoAuthorString(g_data.patent_pubAuthorArray[e.pointIndex].toString().split(','))
-            + '</div>'
-            + '</p>'
-            + '</div>'  ;
-        }
+		chart.tooltipContent(function(key, x, y, e)
+		{
+			if ( key == 'Journal' )
+			{
+				return '<div align="center"><p class="capitalize">'
+				+ '<b><a href="'+ g_data.journal_pubURLArray[e.pointIndex] + '" target="_blank">'+ ((g_data.journal_titleArray[e.pointIndex].length < 80) ? g_data.journal_titleArray[e.pointIndex]:(g_data.journal_titleArray[e.pointIndex].substr(0,79)+" ..."))  + '</a></b>'
+				+ ' (' + g_data.journal_yearArray[e.pointIndex] + ')'
+				+ ' [Citations: ' + g_data.journal_citeArray[e.pointIndex] + ']'
+				+ '<span class="closebtn" onclick="closeTooltip()">&times;</span>'
+				+ '<br><i>' + g_data.journal_nameArray[e.pointIndex] + '</i>'
+				+ ' [IF: ' + g_data.journal_impactFactorArray[e.pointIndex] + ']'
+				+ '<hr id="hr_Dotted"/>'
+				+ getSortedCoAuthorString(g_data.journal_pubAuthorArray[e.pointIndex].toString().split(','))
+				+ '</div>'
+				+ '</p>';
+			}
+			else if (key ==  'Conference / Book')
+			{
+				return '<div align="center"><p class="capitalize">'
+				+ '<b><a href="'+ g_data.conf_pubURLArray[e.pointIndex] + '" target="_blank">'+ ((g_data.conf_titleArray[e.pointIndex].length < 80) ? g_data.conf_titleArray[e.pointIndex]:(g_data.conf_titleArray[e.pointIndex].substr(0,79)+" ..."))  + '</a></b>'
+				+ ' (' + g_data.conf_yearArray[e.pointIndex] + ')'
+				+ ' [Citations: ' + g_data.conf_citeArray[e.pointIndex] + ']'
+				+ '<span class="closebtn" onclick="closeTooltip()">&times;</span>'
+				+ '<br><i>' + g_data.conf_nameArray[e.pointIndex] + '</i>'
+				+ '<hr id="hr_Dotted"/>'
+				+ getSortedCoAuthorString(g_data.conf_pubAuthorArray[e.pointIndex].toString().split(','))
+				+ '</div>'
+				+ '</p>'
+				+ '</div>'  ;
+			}
+			else if (key == 'Patent')
+			{
+				return '<div align="center"><p class="capitalize">'
+				+ '<b><a href="'+ g_data.patent_pubURLArray[e.pointIndex] + '" target="_blank">'+ ((g_data.patent_titleArray[e.pointIndex].length < 80) ? g_data.patent_titleArray[e.pointIndex]:(g_data.patent_titleArray[e.pointIndex].substr(0,79)+" ..."))  + '</a></b>'
+				+ ' (' + g_data.patent_yearArray[e.pointIndex] + ')'
+				+ ' [Citations: ' + g_data.patent_citeArray[e.pointIndex] + ']'
+				+ '<span class="closebtn" onclick="closeTooltip()">&times;</span>'
+				+ '<br><i>' + g_data.patent_nameArray[e.pointIndex] + '</i>'
+				+ '<hr id="hr_Dotted"/>'
+				+ getSortedCoAuthorString(g_data.patent_pubAuthorArray[e.pointIndex].toString().split(','))
+				+ '</div>'
+				+ '</p>'
+				+ '</div>'  ;
+			}
 
-    });
+		});
 
-    //Axis settings
-    chart.xAxis.tickFormat(d3.format('d'));
+		//Axis settings
+		chart.xAxis.tickFormat(d3.format('d'));
 
-    // var yMax =  parseFloat(max_citation) + 10;
-    // chart.yDomain([0, 3000]);
-    chart.yAxis.axisLabel('Number of citations')
-    chart.yAxis.tickFormat(d3.format('d'));
-
-
-    /* Done setting the chart up? Time to render it!*/
-    var scatterChartData = g_data;   //You need data...
+		// var yMax =  parseFloat(max_citation) + 10;
+		// chart.yDomain([0, 3000]);
+		chart.yAxis.axisLabel('Number of citations')
+		chart.yAxis.tickFormat(d3.format('d'));
 
 
-    d3.select('#plot_journal svg')
-    .datum(scatterChartData)
-    .call(chart);
-
-    //legend
-    var shapes = ['circle', 'triangle-up', 'cross'];
-    d3.selectAll('.nv-series')[0].forEach(function(d,i) {
-
-        if( i < 3 )// only legend for scatter chart should change
-        {
-            var group = d3.select(d),
-            circle = group.select('circle');
-
-            var color = circle.style('fill');
-            circle.remove();
-
-            var symbol = group.append('path')
-            .attr('d', d3.svg.symbol().type(shapes[i]))
-            .style('stroke', color)
-            .style("stroke-width", 1.5)
-            .style('fill', color)
-            //adjust size
-            .attr('transform', 'scale(1.1) translate(-2,0)') // translate(100,50)
-        }
-    });
+		/* Done setting the chart up? Time to render it!*/
+		var scatterChartData = g_data;   //You need data...
 
 
+		d3.select('#plot_journal svg')
+		.datum(scatterChartData)
+		.call(chart);
 
-    // chart.dispatch.on('stateChange', function(e) { ('New State:', JSON.stringify(e)); });
+		//legend
+		var shapes = ['circle', 'triangle-up', 'cross'];
+		d3.selectAll('.nv-series')[0].forEach(function(d,i) {
 
-    return chart;
-});
-</script>
+			if( i < 3 )// only legend for scatter chart should change
+			{
+				var group = d3.select(d),
+				circle = group.select('circle');
+
+				var color = circle.style('fill');
+				circle.remove();
+
+				var symbol = group.append('path')
+				.attr('d', d3.svg.symbol().type(shapes[i]))
+				.style('stroke', color)
+				.style("stroke-width", 1.5)
+				.style('fill', color)
+				//adjust size
+				.attr('transform', 'scale(1.1) translate(-2,0)') // translate(100,50)
+			}
+		});
+
+
+
+		// chart.dispatch.on('stateChange', function(e) { ('New State:', JSON.stringify(e)); });
+
+		return chart;
+	});
+	</script>
 
 
 </body>
