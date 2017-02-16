@@ -1,0 +1,23 @@
+{
+  "name": "datavizexamples",
+  "version": "1.0.0",
+  "description": "### New",
+  "main": "JS-array.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kyeongan/dataVizExamples.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kyeongan/dataVizExamples/issues"
+  },
+  "homepage": "https://github.com/Kyeongan/dataVizExamples#readme",
+  "dependencies": {
+    "c3": "^0.4.11",
+    "d3": "^4.5.0"
+  }
+}
