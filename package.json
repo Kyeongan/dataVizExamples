@@ -18,6 +18,6 @@
   "homepage": "https://github.com/Kyeongan/dataVizExamples#readme",
   "dependencies": {
     "c3": "^0.4.11",
-    "d3": "^4.5.0"
+    "d3": "^4.7.3"
   }
 }
