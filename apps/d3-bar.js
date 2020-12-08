@@ -18,6 +18,13 @@ var svg = d3
 	.attr("width", chart_width)
 	.attr("height", chart_height);
 
+// Create Scales
+var x_scale = d3
+	.scaleBand()
+	.domain(d3.range(data.length))
+	.rangeRound([0, chart_width])
+	.paddingInner(0.05);
+
 // Bind Data and Create Bars
 svg
 	.selectAll("rect")
@@ -25,12 +32,12 @@ svg
 	.enter()
 	.append("rect")
 	.attr("x", function (d, i) {
-		return i * (chart_width / data.length); //
+		return x_scale(i); //
 	})
 	.attr("y", function (d) {
 		return chart_height - d * 10;
 	})
-	.attr("width", chart_width / data.length - bar_padding)
+	.attr("width", x_scale.bandwidth())
 	.attr("height", function (d) {
 		return d * 10;
 	})
